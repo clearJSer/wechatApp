@@ -7,7 +7,7 @@ var sass = require('gulp-sass')
 gulp.task('sass',function(){
 	return gulp.src(['./pages/**/*.scss','./*.scss'])
 			.pipe(sass().on('error',sass.logError))
-			.pipe(gulp.dest('./build'));
+			.pipe(gulp.dest('./'));
 })
 
 //检测文件变化
