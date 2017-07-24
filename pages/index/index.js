@@ -4,7 +4,10 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    logo: '../../assets/images/logo.jpg',
+    mode:'scaleToFill',
+    src:"https://img.yzcdn.cn/upload_files/2017/04/24/FkZFGUvuQL8OMD-Sjkx4P0qU64G8.jpg"
   },
   //事件处理函数
   bindViewTap: function() {

@@ -1,10 +1,45 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="box">
+  <view class="top">
+  	<image src="{{logo}}" class="logo" mode="{{mode}}"  style="width: 126rpx; height: 126rpx;border-radius:50% "></image>
+  	<text class="theme" style="color:#fff;font-size:30rpx">鲜克优选</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="middle">
+  	<view class="msg">
+  		<view class="btn">公告</view>
+  		<text class="content">欢迎光临鲜克优选!</text>
+  	</view>
+    <view class="goods-box">
+    	<view class="nav-left">
+	    	<view class="menu-item">调味品</view>
+	    	<view class="menu-item active">调味品</view>
+    	</view>
+    	<view class="nav-right">
+		  	<view class="goods-list" >
+		  		<view class="title">调味品</view>
+				<view class="show-goods">
+					<view class="show-goods-box">
+						<image style="width: 126rpx; height: 126rpx; border-radius:10rpx; " mode="{{mode}}" src="{{src}}"></image>
+						<view class="des">
+							<text class="theme">辛香浓烈大蒜头50g</text>
+							<text class="price">¥<text>1.00</text></text>
+						</view>
+						<view class="addshopcar"><text>+</text></view>
+					</view>
+				</view>
+				<view class="show-goods">
+					<view class="show-goods-box">
+						<image style="width: 126rpx; height: 126rpx; border-radius:10rpx; " mode="{{mode}}" src="{{src}}"></image>
+						<view class="des">
+							<text class="theme">辛香浓烈大蒜头50g</text>
+							<text class="price">¥<text>1.00</text></text>
+						</view>
+						<view class="addshopcar"><text>+</text></view>
+					</view>
+				</view>
+				
+		  	</view>
+    	</view>
+    </view>
   </view>
 </view>

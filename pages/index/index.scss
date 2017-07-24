@@ -1,0 +1,125 @@
+.box{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	.top{
+		width:100%;
+		height:200rpx;
+		background:#eee;
+		display:flex;
+		align-items:center;
+		.logo{margin:0 20rpx;}
+		.theme{
+			color:#fff;
+			font-size:30px;
+		}
+	}
+	.middle{
+		flex:1;
+		display:flex;
+		flex-direction:column;
+		.msg{
+			height:60rpx;
+			background:rgb(251,249,233);
+			width:100%;
+			display:flex;
+			align-items:center;
+			.btn{
+				width:56rpx;
+				height:30rpx;
+				background:blue;
+				font-size:24rpx;
+				color:#fff;
+				border-radius:10rpx;
+				line-height:30rpx;
+				text-align:center;
+				margin:0 20rpx;
+			}
+			.content{
+				font-size:26rpx;
+			}
+		}
+		.goods-box{
+			flex:1;
+			display:flex;
+			.nav-left{
+				width:160rpx;
+				height:100%;
+				overflow-y:scroll;
+				.menu-item{
+					box-sizing:border-box;
+					width:160rpx;
+					height:112rpx;
+					line-height:112rpx;
+					text-align:center;
+					border-bottom:1rpx solid #ccc;
+					border-right:1rpx solid #ccc;
+					border-left:4rpx solid #fff;
+					&.active{
+						border-left:4rpx solid red;
+						font-weight:bolder;
+					}
+				}
+
+			}
+			.nav-left::-webkit-scrollbar {display:none}
+			.nav-right{
+				flex:1;
+				.title{
+					height:60rpx;
+					padding-left:20rpx;
+					background:rgb(245,246,247);
+					font-size:22rpx;
+					line-height:60rpx;
+				}
+				.show-goods{
+					position:relative;
+					padding:20rpx 20rpx;
+					.show-goods-box{
+						display:flex;
+						border-bottom: 2rpx solid #ccc;
+						padding-bottom:10rpx;
+						.des{
+							.theme{
+								font-size:28rpx;
+							}
+							padding-left:20rpx;
+							padding-top:10rpx;
+							display:flex;
+							flex-direction:column;
+							.price{
+								margin:20rpx 0;
+								color:red;
+								text{
+									color:red;
+								}
+							}
+						}
+					}
+					.addshopcar{
+						position:absolute;
+						right:30rpx;
+						bottom:50rpx;
+						width:40rpx;
+						height:40rpx;
+						border-radius:50%;
+						background:red;
+						text{
+							color:#fff;
+							font-weight:bloder;
+							position:absolute;
+							top:5rpx;
+							left:10rpx;
+						}
+
+					}
+				}
+			}		
+		}
+	}
+}
+page{
+	width:100%;
+	height:100%;
+}
