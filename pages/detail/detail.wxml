@@ -1,8 +1,8 @@
 <view class="detail-container">
 	<image src="{{imageSrc}}" class="detail-image" mode="{{mode}}"  ></image>
 	<view class="content">
-		<view class="title">脆嫩爽口的小葱50g</view>
-		<view class="title price">¥<text>1.00</text></view>
+		<view class="title">{{title}}</view>
+		<view class="title price">¥<text>{{price}}</text></view>
 	</view>
 	<view class="desc">
 		<text class="desc-txt">运费：免运费</text>

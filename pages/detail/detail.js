@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imageSrc:'https://img.yzcdn.cn/upload_files/2017/04/24/FkZFGUvuQL8OMD-Sjkx4P0qU64G8.jpg',
+    imageSrc:'',
+    title:'',
+    price:'',
     mode:'scaleToFill',
     home:'../../assets/icon/home.png',
     shopcar:'../../assets/icon/shop-cart-o.png'
@@ -15,7 +17,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var id = options.id
+     wx.request({
+      url: `https://open.youzan.com/api/oauthentry/weapp.wsc.item.detail/1.0.0/get?access_token=d0454543b6c83f5081de7336cc8cb63a&kdt_id=14581473&app_id=wx197c8e41d45cc396&alias=${id}&fans_type=1343`,
+      success: function(res){
+        var obj = res.data.response.brief
+        this.setData({
+          imageSrc:obj.picture[0].url,
+          title:obj.title,
+          price:obj.price
+        })
+      }.bind(this)
+    })
   },
 
   /**

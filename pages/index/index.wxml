@@ -1,5 +1,8 @@
 <!--index.wxml-->
+<!-- <import src="../templates/mytemplate.wxml"/> -->
 <view class="box">
+  <!-- 弹出购物车选择列表 -->
+<!--   <template is="car" data="{{...item}}"></template> -->
   <view class="top">
   	<image src="{{team_logo}}" class="logo" mode="{{mode}}"  style="width: 126rpx; height: 126rpx;border-radius:50% "></image>
   	<text class="theme" style="color:#fff;font-size:30rpx">{{team_name}}</text>
@@ -15,11 +18,11 @@
     	</view>
     	<view class="nav-right">
 		  	<view class="goods-list" >
-		  		<scroll-view scroll-y style="height:850rpx;" >
+		  		<scroll-view scroll-y style="height:850rpx;" scroll-top="{{scrollTop}}">
 		  		<view wx:key="{{index}}" wx:for="{{goodsList}}">
 			  		<view class="title">{{item.title}}</view>
-					<view class="show-goods" bindtap="openDetail" wx:for-index="idx" wx:key="{{idx}}" wx:for="{{item.data}}" wx:for-item="goods">
-						<view class="show-goods-box">
+					<view class="show-goods" wx:for-index="idx" wx:key="{{idx}}" wx:for="{{item.data}}" wx:for-item="goods">
+						<view class="show-goods-box" bindtap="openDetail"  data-alias="{{goods.alias}}">
 							<image style="width: 126rpx; height: 126rpx; border-radius:10rpx; " mode="{{mode}}" src="{{goods.pic_url}}"></image>
 							<view class="des">
 								<text class="theme">{{goods.title}}</text>

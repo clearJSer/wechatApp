@@ -1,0 +1,29 @@
+<template name="car">
+  <view class="mask">
+  	<view class="board">
+  		<view class="board-top">
+  			<image src="{{team_logo}}" class="logo" mode="{{mode}}"  style="width: 126rpx; height: 126rpx;border-radius:50% "></image>
+  			<view>
+  				<text>dfasdfsda</text>
+  				<text>¥<text>1.00</text></text>
+  			</view>
+  			<view>X</view>
+  		</view>
+  		<view class="board-middle">
+  			<view>
+  				<text>购买数量</text>
+  				<text>剩余99991件</text>
+  			</view>
+  			<view>
+  				<view>-</view>
+  				<view>1</view>
+  				<view>+</view>
+  			</view>
+  		</view>
+  		<view class="board-bottom">
+  			<view class="btn" style="background:orange">加入购物车</view>
+  			<view class="btn" style="background:red">立即购买</view>
+  		</view>
+  	</view>
+  </view>
+</template>

@@ -10,7 +10,9 @@ Page({
     welcome:'',
     menuList:[],
     goodsList:[],
-    select:'',
+    scrollTop:0,
+    templateData:{},
+    select:'13naqjy0m',
     mode:'scaleToFill',
     src:"https://img.yzcdn.cn/upload_files/2017/04/24/FkZFGUvuQL8OMD-Sjkx4P0qU64G8.jpg"
   },
@@ -31,13 +33,10 @@ Page({
       method: 'GET',
       success: function(res){
         var obj = {}
-        obj.title = title
+        obj.title = '调味品'
         obj.data = res.data.response.items
-        var arr = this.data.goodsList
-        arr.push(obj)
-        console.log(arr)
         this.setData({
-          goodsList:arr
+          goodsList:[obj]
         })
       }.bind(this)
     })
@@ -53,7 +52,7 @@ Page({
   },
   chooseMenu(event){
     var id = event.target.dataset.id;
-    console.log(id)
+    console.log(this.data.scrollTop)
     var title = event.target.dataset.name;
     this.setData({
       select:id
@@ -65,17 +64,15 @@ Page({
         var obj = {}
         obj.title = title
         obj.data = res.data.response.items
-        var arr = this.data.goodsList
-        arr.push(obj)
-        console.log(arr)
+        console.log(obj)
         this.setData({
-          goodsList:arr
+          goodsList:[obj]
         })
       }.bind(this)
     })
   },
-  openDetail(){
-    var id = 1;
+  openDetail(event){
+    var id = event.currentTarget.dataset.alias;
     wx.navigateTo({
         url: '/pages/detail/detail?id=' + id
     })
