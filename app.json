@@ -1,34 +1,39 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
+    "pages/detail/detail",
+    "pages/my/my",
+    "pages/shopcar/shopcar",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "绿色农场",
-    "navigationBarTextStyle":"black",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "绿色农场",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"black",
-    "selectedColor":"red",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath":"./assets/icon/home.png",
-      "selectedIconPath":"./assets/icon/home_fill.png"
-    },{
-      "pagePath": "pages/logs/logs",
-      "text": "购物车",
-      "iconPath":"./assets/icon/shop-cart-o.png",
-      "selectedIconPath":"./assets/icon/shop-cart.png"
-    },{
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath":"./assets/icon/my.png",
-      "selectedIconPath":"./assets/icon/my_fill.png"
-    }]
+    "color": "black",
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./assets/icon/home.png",
+        "selectedIconPath": "./assets/icon/home_fill.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "./assets/icon/shop-cart-o.png",
+        "selectedIconPath": "./assets/icon/shop-cart.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./assets/icon/my.png",
+        "selectedIconPath": "./assets/icon/my_fill.png"
+      }
+    ]
   }
 }

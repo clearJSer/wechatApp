@@ -1,0 +1,23 @@
+<view class="detail-container">
+	<image src="{{imageSrc}}" class="detail-image" mode="{{mode}}"  ></image>
+	<view class="content">
+		<view class="title">脆嫩爽口的小葱50g</view>
+		<view class="title price">¥<text>1.00</text></view>
+	</view>
+	<view class="desc">
+		<text class="desc-txt">运费：免运费</text>
+		<text class="desc-txt">剩余：<text>9998</text></text>
+	</view>
+	<view class="bottom-menu">
+		<view class="menu">
+			<image src="{{home}}" mode="{{mode}}" style="width:56rpx;height: 56rpx;margin-bottom: 10rpx"></image>
+			<text class="menu-txt">主页</text>
+		</view>
+		<view class="menu">
+			<image src="{{shopcar}}" mode="{{mode}}" style="width:56rpx;height: 56rpx;margin-bottom: 10rpx"></image>
+			<text class="menu-txt">主页</text>
+		</view>
+		<view class="addcar" style="background-color: orange">加入购物车</view>
+		<view class="addcar">立即购买</view>
+	</view>
+</view>

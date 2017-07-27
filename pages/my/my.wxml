@@ -1,1 +1,33 @@
-<view>22</view>
+<view class="container">
+    <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="myorder">
+        <view class="order_title">
+            <text>我的订单</text>
+            <text>查看全部订单</text>
+        </view>
+        <view class="order_con">
+            <view>
+                <image src="../../assets/images/my/pay.png"></image>
+                <text>待付款</text>
+            </view>
+            <view>
+                <image src="../../assets/images/my/send.png"></image>
+                <text>待发货</text>
+            </view>
+            <view>
+                <image src="../../assets/images/my/deliver.png"></image>
+                <text>待收货</text>
+            </view>
+            <view>
+                <image src="../../assets/images/my/square_check.png"></image>
+                <text>已完成</text>
+            </view>
+        </view>
+    </view>
+    <view class="myshopcar" bindtap="gotoshopcar">
+        <text>购物车</text>
+    </view>
+</view>

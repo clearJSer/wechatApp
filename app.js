@@ -8,6 +8,7 @@ App({
   },
 
   getUserInfo: function(cb) {
+    console.log(this.globalData.userInfo);
     var that = this
     if (this.globalData.userInfo) {
       typeof cb == "function" && cb(this.globalData.userInfo)

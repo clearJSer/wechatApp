@@ -1,0 +1,78 @@
+.container {
+  background: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+  .container .userinfo {
+    height: 285rpx;
+    background: #fff;
+    padding-top: 62rpx;
+    border-bottom: 2rpx solid #e5e5e5;
+    margin-bottom: 18rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .container .userinfo .userinfo-avatar {
+      width: 166rpx;
+      height: 166rpx;
+      border-radius: 50%;
+      border: 4rpx solid #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+    .container .userinfo .userinfo-nickname {
+      color: #333333;
+      margin-top: 30rpx;
+      font-size: 22rpx; }
+  .container .myorder {
+    height: 236rpx;
+    border-top: 2rpx solid #e5e5e5;
+    border-bottom: 2rpx solid #e5e5e5;
+    padding: 0 27rpx;
+    background: #fff;
+    margin-bottom: 18rpx;
+    display: flex;
+    flex-direction: column; }
+    .container .myorder .order_title {
+      height: 77rpx;
+      border-bottom: 2rpx solid #e5e5e5;
+      display: flex;
+      justify-content: space-between; }
+      .container .myorder .order_title text {
+        font-size: 22rpx;
+        line-height: 77rpx; }
+      .container .myorder .order_title text:last-child {
+        font-size: 20rpx;
+        color: #666;
+        padding-right: 25rpx;
+        background-size: 14rpx 21rpx; }
+    .container .myorder .order_con {
+      flex: 1;
+      display: flex; }
+      .container .myorder .order_con view {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .container .myorder .order_con view image {
+          width: 46rpx;
+          height: 42rpx;
+          margin: 38rpx 0 20rpx 0; }
+        .container .myorder .order_con view text {
+          color: #333;
+          font-size: 20rpx; }
+  .container .myshopcar {
+    height: 79rpx;
+    background: #fff;
+    border-top: 2rpx solid #e5e5e5;
+    border-bottom: 2rpx solid #e5e5e5;
+    padding: 0 27rpx; }
+    .container .myshopcar text {
+      font-size: 22rpx;
+      line-height: 79rpx; }
